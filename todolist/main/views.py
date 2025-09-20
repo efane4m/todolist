@@ -5,3 +5,6 @@ def index(request):
 
 def profile(request):
     return render(request, 'main/profile.html')
+
+def settings(request):
+    return render(request, 'main/settings.html')
