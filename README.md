@@ -5,6 +5,9 @@
 ```
 later ...
 ```
+### Администратор
+Логин: admin
+Пароль: Swfaaa000
 ### Стек
 - Frontend: html, css
 - backend: python + django
