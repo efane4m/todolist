@@ -5,6 +5,14 @@
 {% block content %}
     <div class="features">
         <h1>Задачи</h1>
-        <p>Позже тут будет возможнсть просмотра задач</p>
+        {% if tasks %}
+            {% for el in tasks %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.task }}</h3><br>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Нет записей!</p>
+        {% endif %}
     </div>
 {% endblock %}

@@ -1,20 +1,58 @@
 body {
     background: #154304;
+    min-height: 100vh;
+    color: #fff;
 }
 
 aside {
-    float: left;
+    position: fixed;
     background: #025c37;
-    width: 20%;
+    width: 300px;
     padding: 2.5%;
     height: 100vh;
     color: #fff;
     border-right: 5px solid #4d4d4d;
-
+    /*box-sizing: border-box;*/
 }
+
+main {
+    margin-left: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+main .features {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+main .features h1 {
+    font-size: 50px;
+}
+
+main .features p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.alert-warning {
+    width: 400px;
+    margin: 20px auto;
+    text-align: left;
+    clear: both;
+}
+
 aside img {
     width: 200px;
-    float: left;
+    display: block;
+    margin-bottom: 10px;
 }
 
 aside .logo {
@@ -30,8 +68,9 @@ aside h3 {
     font-size: 28px;
 }
 
-aside ul {list-style: none;}
-
+aside ul {
+    list-style: none;
+}
 
 aside ul li a {
     text-decoration: none;
@@ -44,29 +83,4 @@ aside ul li a {
 aside ul li a:hover {
     color: #154304;
     transform: scale(1.05);
-}
-
-main .features {
-    float: left;
-    color: #fff;
-    margin-top: 100px;
-    text-align: center;
-    width: 75%;
-}
-
-main .features h1 {font-size: 50px;}
-main .features p {max-width: 400px; margin: 20px auto;}
-
-.alert-warning {
-    float: left;
-    clear: borh;
-    width: 400px;
-    margin: 20px 34%;
-    text-align: left;
-}
-
-form {
-    margin-left: 32%;
-    width: 500px;
-    margin-top: 50px;
 }
